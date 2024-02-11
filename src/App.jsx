@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import NavBar from "./components/navbar";
 
 function App() {
-
   return (
-    <div>
-    <h1>Home</h1>
-    <p>movies, series and animations</p>
-    </div>
-  )
+    <>
+      <NavBar />
+      <div style={{padding: '10px'}}>
+        <h1>Home</h1>
+        <p>movies, series and animations</p>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
