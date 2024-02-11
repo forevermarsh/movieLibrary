@@ -53,7 +53,8 @@ function Cards() {
           }}
         >
           <h5 style={{fontWeight: 'lighter'}}>Horror</h5>
-          <h5 style={{fontWeight: 'lighter'}}>see all</h5>
+          <button style={{width:'70px', height: '15px', margin: '3px',display:'flex', alignItems: 'center', justifyContent: 'center'}}><span style={{fontSize: '10px'}}>see all</span></button>
+        
         </div>
         <div
         className="container"
@@ -78,6 +79,7 @@ function Cards() {
           <MovieCard />
           <MovieCard />
         </div>
+        <hr />
       </div>
     </>
   );

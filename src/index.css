@@ -80,6 +80,13 @@ button:focus-visible {
   scrollbar-width: none;
 }
 
+.poster{
+  background-image: url(./assets/witcher.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 
 @media (prefers-color-scheme: light) {
