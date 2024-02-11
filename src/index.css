@@ -35,6 +35,7 @@ p {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: start;
   justify-content: start;

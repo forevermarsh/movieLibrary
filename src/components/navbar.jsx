@@ -30,9 +30,9 @@ function NavBar() {
         <div
           style={{ width: "100%", height: "35%", backgroundColor: "#4a4a4a", display: 'flex', alignItems: 'center' }}
         >
-            <h3 style={{padding: '0 10px', color: 'white'}}>Movies</h3>
-            <h3 style={{padding: '0 10px', color: 'white'}}>Tv Series</h3>
-            <h3 style={{padding: '0 10px', color: 'white'}}>Animations</h3>
+            <h4 style={{padding: '0 10px', color: 'white', fontWeight: 'lighter'}}>Movies</h4>
+            <h4 style={{padding: '0 10px', color: 'white', fontWeight: 'lighter'}}>Tv Series</h4>
+            <h4 style={{padding: '0 10px', color: 'white', fontWeight: 'lighter'}}>Animations</h4>
         </div>
       </div>
     </>
