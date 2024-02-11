@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Web App",
-    "short_name": "Web App",
-    "description": "PWA Web App",
+    "name": "Kalaz Movie Library",
+    "short_name": "Kalaz ML",
+    "description": "kalaz movie library",
     "orientation": "portrait",
     "icons": [
         {

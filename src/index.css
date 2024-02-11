@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: lora;
+  src: url(./assets/lora.ttf);
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -20,6 +25,10 @@ a {
 }
 a:hover {
   color: #535bf2;
+}
+
+p {
+  font-family: lora;
 }
 
 body {
