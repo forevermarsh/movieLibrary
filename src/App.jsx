@@ -1,6 +1,9 @@
 import React from "react";
 import NavBar from "./components/navbar";
 import MovieCard from "./components/moviecards";
+import './index.css'
+
+
 
 function App() {
   return (
@@ -16,20 +19,18 @@ function App() {
       <div>
         <NavBar />
       </div>
-      <hr />
-
-      <div style={{ paddingTop: "13vh" }}>
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
+      <div style={{ paddingTop: "14vh" }}>
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
       </div>
     </div>
   );
@@ -51,10 +52,11 @@ function Cards() {
             justifyContent: "space-between",
           }}
         >
-          <h5>Horror</h5>
-          <span>see all</span>
+          <h5 style={{fontWeight: 'lighter'}}>Horror</h5>
+          <h5 style={{fontWeight: 'lighter'}}>see all</h5>
         </div>
         <div
+        className="container"
           style={{ overflowX: "scroll", whiteSpace: "nowrap", display: "flex" }}
         >
           <MovieCard />

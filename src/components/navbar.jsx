@@ -4,7 +4,7 @@ import Menu, { Notifications, Search } from "./svg";
 function NavBar() {
   return (
     <>
-      <div style={{ width: "100%", height: "13vh", position: 'fixed', }}>
+      <div style={{ width: "100%", height: "13vh", position: 'fixed', backgroundColor: '#fff'}}>
         <div
           style={{
             width: "100%",
@@ -52,6 +52,7 @@ function NavBar() {
             Animations
           </h4>
         </div>
+        <div style={{width: '100%', height: '1px', backgroundColor: 'black'}}></div>
       </div>
     </>
   );
