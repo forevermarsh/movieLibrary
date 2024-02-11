@@ -6,8 +6,6 @@ function App() {
     <>
       <NavBar />
       <div style={{padding: '10px'}}>
-        <h1>Home</h1>
-        <p>movies, series and animations</p>
       </div>
     </>
   );
