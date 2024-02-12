@@ -1,3 +1,14 @@
+@font-face {
+  font-family: assasin;
+  src: url(/src/assets/Assassin$.ttf);
+}
+@font-face {
+  font-family: lora;
+  src: url(/src/assets/lora.ttf);
+}
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,13 +22,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-#root{
-  width: 100%;
-}
-@font-face {
-  font-family: lora;
-  src: url(./assets/lora.ttf);
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -29,39 +34,61 @@ a:hover {
   color: #535bf2;
 }
 
-p {
-  font-family: lora;
-}
-
 body {
   margin: 0;
-  padding: 0;
   display: flex;
   place-items: start;
-  justify-content: start;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #fff;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-body::-webkit-scrollbar{
-  display: none;
+  scroll-behavior: smooth;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: assasin;
+  cursor: pointer;
+}
+h3 {
+  font-family: assasin;
+  cursor: pointer;
+}
+p,
+h4 {
+  font-family: lora;
+}
+
+span {
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(173, 216, 230, 0.486);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 192, 203, 0.164);
+  width: 50px;
+  margin: 10px;
+  transition: 0.3s;
+  transition: transform 0.5s;
+  padding: 10px;
+  font-family: assasin;
+}
+a:hover {
+  color: black;
+}
+span:hover {
+  transform: scale(1.05);
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid rgba(173, 216, 230, 0.473);
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  color: #5c474e;
+  font-family: assasin;
+  background-color: #fff;
+  backdrop-filter: blur(3px);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -70,24 +97,8 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 0px auto -webkit-focus-ring-color;
 }
-.container::-webkit-scrollbar{
-  display: none;
-}
-.container{
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.poster{
-  background-image: url(./assets/witcher.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -98,6 +109,10 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
   }
 }
+
+
+

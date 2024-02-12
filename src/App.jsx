@@ -1,86 +1,29 @@
-import React from "react";
-import NavBar from "./components/navbar";
-import MovieCard from "./components/moviecards";
-import './index.css'
-
-
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import Movies from "./pages/movies";
+import Series from "./pages/series";
+import Search from "./pages/search";
+import Cart from "./pages/cart";
+import Preview from "./pages/preview";
+import Signup from "./pages/signup";
 
 function App() {
+
+
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "start",
-        flexDirection: "column",
-      }}
-    >
-      <div>
-        <NavBar />
-      </div>
-      <div style={{ paddingTop: "14vh" }}>
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-      </div>
+    <div style={{width: '100%'}}>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Movies />} />
+          <Route path="/movies" element={<Movies />}/>
+          <Route path="/series" element={<Series />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/preview" element={<Preview />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+        </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-
-function Cards() {
-  return (
-    <>
-      <div>
-        <div
-          style={{
-            padding: "0 5%",
-            width: "90%",
-            height: "20px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <h5 style={{fontWeight: 'lighter'}}>Horror</h5>
-          <button style={{width:'70px', height: '15px', margin: '3px',display:'flex', alignItems: 'center', justifyContent: 'center'}}><span style={{fontSize: '10px'}}>see all</span></button>
-        
-        </div>
-        <div
-        className="container"
-          style={{ overflowX: "scroll", whiteSpace: "nowrap", display: "flex" }}
-        >
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-        </div>
-        <hr />
-      </div>
-    </>
-  );
-}
