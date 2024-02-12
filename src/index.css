@@ -7,7 +7,9 @@
   src: url(/src/assets/lora.ttf);
 }
 
-
+.active{
+  border-bottom: solid 1px #cccccc;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

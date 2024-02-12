@@ -19,7 +19,7 @@ function Series() {
       }}
     >
       <Navbar />
-      <h1>Serie</h1>
+      <h1>Series</h1>
 
     </div>
   );

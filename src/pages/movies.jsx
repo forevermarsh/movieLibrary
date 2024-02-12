@@ -11,14 +11,12 @@ function Movies() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-around",
-        alignItems: "start",
+        alignItems: "center",
         width: "100%",
-        textAlign: "start",
       }}
     >
-      <h3 style={{ padding: "0 5%" }}>Movies</h3>
-
       <Navbar />
+      <h1>Movies</h1>
     </div>
   );
 }
