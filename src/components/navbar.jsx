@@ -21,14 +21,12 @@ function Navbar() {
         <Menu />
         <h6>Kalaz Ml</h6>
         </div>
-        <div style={{width: '15%', display: 'flex', justifyContent: 'space-between'}}>
-        <Search />
         <Notifications />
-        </div>
       </div>
       <div style={{height: '40%', display: 'flex', alignItems: 'center'}}>
       <NavLink onClick={play} to="/movies" style={{width: '20%', height:'100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'black'}}><h5>Movies</h5></NavLink>
       <NavLink onClick={play} to="/series" style={{width: '20%', height:'100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'black'}}><h5>Series</h5></NavLink>
+      <NavLink onClick={play} to="/search" style={{width: '20%', height:'100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'black'}}><h5>Search</h5></NavLink>
       </div>
     </div>
     </>
