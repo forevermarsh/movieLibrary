@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import { createBrowserRouter } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Movies from "./pages/movies";
 import Series from "./pages/series";
+
+
 
 function App() {
   

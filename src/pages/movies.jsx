@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../assets/navbar";
-import { MovieCard } from "../assets/moviepage";
+import { MovieCard } from "../assets/moviepage";55
 
 function Movies() {
     return (
